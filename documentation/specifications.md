@@ -27,6 +27,18 @@ Pour la composante cartographique centrale de l'interface utilisateur, nous util
 
 #### Prochaines Étapes
 1. Mise en place d'un POC avec react-map-gl
+   - Configuration du token Mapbox dans .env
+   - Création du composant Map de base
+   - Définition du style initial de la carte
 2. Tests de performance avec différents volumes de données
 3. Définition des styles de carte personnalisés
 4. Exploration des intégrations Three.js
+
+#### Configuration
+Pour utiliser Mapbox GL JS, un token d'accès est requis :
+1. Créer un compte sur mapbox.com
+2. Générer un token public (default public token)
+3. Stocker le token dans .env.local :
+   ```
+   REACT_APP_MAPBOX_TOKEN=votre_token_ici
+   ```
